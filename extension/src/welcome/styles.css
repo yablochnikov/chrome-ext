@@ -1,0 +1,43 @@
+body {
+  font-family: "Arial", sans-serif;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+main {
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+#editable-div {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  min-height: 50px;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+}

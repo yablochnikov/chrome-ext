@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "WordFiller",
+  "description": "Test task for EXISTECK by Yablochnikov Nikita",
+  "version": "666",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*", "*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "all_frames": true
+    }
+  ]
+}
